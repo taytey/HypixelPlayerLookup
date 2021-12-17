@@ -1,4 +1,3 @@
-import json
 import unittest
 import hypixel_util
 
@@ -21,7 +20,8 @@ class TestGetInfo(unittest.TestCase):
             "title": "delectus aut autem",
             "completed": False
         }
-        self.assertNotEqual(expected_return_value, hypixel_util.get_json('https://jsonplaceholder.typicode.com/todos/1'))
+        self.assertNotEqual(expected_return_value,
+                            hypixel_util.get_json('https://jsonplaceholder.typicode.com/todos/1'))
 
 
 if __name__ == '__main__':
